@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href=""/> <!-- Estilos CSS Files -->
+    <link rel="shortcut icon" href="" />
+    <!-- Estilos CSS Files -->
     <link rel="stylesheet" href="./aos/aos.css" />
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <!--Links para font family Bebas Neue y Montserrat-->
@@ -22,9 +22,7 @@
     <!-- Template Main CSS File -->
     <!-- Google Tag Manager -->
     <!-- Políticas de seguridad -->
-
 </head>
-
 <body>
     <header>
         <!--navbar-->
@@ -112,20 +110,20 @@
         <!--tarjetas-->
         <section class="productos py-5">
             <div class="container py-5">
-                <div class="row" data-aos="fade-down">
+                <div class="row">
                     <div class="col-lg-3">
-                        <div class="card">
+                        <div class="card" data-aos="fade-down-left">
                             <img src="img/DreamShaper_v7_ropa_de_hombre_casual_varios_estilos_0.webp"
                                 class="card-img-top" alt="Playera azul cuello V" />
                             <div class="card-body">
                                 <h1 class="card-title">ESTILO CASUAL</h1>
-                                <p class="card-text">Quieres verte como un profesional sin verte muy formal?... intenta
-                                    probar este estilo.</p>
+                                <p class="card-text">Quieres verte como un profesional sin verte muy formal?...
+                                    intenta probar este estilo.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card" style="width: 18rem">
+                        <div class="card" style="width: 18rem" data-aos="fade-down-left">
                             <img src="img/tarjeta-2-1.webp" class="card-img-top" alt="Playera Blanca Cuello redondo" />
                             <div class="card-body">
                                 <h1 class="card-title">ESTILO FORMAL</h1>
@@ -135,17 +133,17 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card" style="width: 18rem">
+                        <div class="card" style="width: 18rem" data-aos="fade-down-left">
                             <img src="img/tarjeta-1-1.webp" class="card-img-top" alt="Playera azul cuello V" />
                             <div class="card-body">
                                 <h1 class="card-title">ESTILO BASICO</h1>
-                                <p class="card-text">Quieres verte como un profesional sin verte muy formal?... intenta
-                                    probar este estilo.</p>
+                                <p class="card-text">Quieres verte como un profesional sin verte muy formal?...
+                                    intenta probar este estilo.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card" style="width: 18rem">
+                        <div class="card" style="width: 18rem" data-aos="fade-down-left">
                             <img src="img/DreamShaper_v7_ropa_de_hombre_unicocon_varios_estilos_0.webp"
                                 class="card-img-top" alt="Playera Blanca Cuello redondo" />
                             <div class="card-body">
@@ -159,24 +157,29 @@
             </div>
         </section>
     </main>
+    <footer class="footer border-top py-4">
+        <p>Contactos</p>
+        <p>Correo electrónico de contacto:
+            <a href="leo: leonardo.vivar.es@usb.edu.mx">
+                leonardo.vivar.es@usb.edu.mx</a><br>
+            <a href="tel 5583978427">Telefono 5583978427</a>
+        </p>
+        <a href="politicas.html">
+            <p style="color:rgb(0, 0, 0)">Politicas y Terminos de Privacidad y de Condiciones</p>
+        </a>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    </div>
-
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./aos/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            AOS.init({
+                duration: 1000, // Especifica la duración de las animaciones en milisegundos
+            });
+        });
+    </script>
     <script src="./js/SCRIPT.JS"></script>
 </body>
-<footer class="footer border-top py-4">
-    <p>Contactos</p>
-    <p>Correo electrónico de contacto:
-        <a href="leo: leonardo.vivar.es@usb.edu.mx">
-            leonardo.vivar.es@usb.edu.mx</a>
-        <br>
-        <a href="tel 5583978427">Telefono 5583978427</a>
-    </p>
-        <a href="politicas.html">
-            <p style="color:rgb(0, 0, 0)">Politicas y Terminos de Privacidad y de Condiciones</p>
-</footer>
-
 </html>

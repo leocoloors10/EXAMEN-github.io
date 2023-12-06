@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagina Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="">
+  <!-- Estilos CSS Files -->
+  <link rel="stylesheet" href="./aos/aos.css" />
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="examen.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <!--Links para font family Bebas Neue y Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="examen.css" type="text/css">
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #4C4949;">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="./index.html">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="user py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+              </div>
+              <div class="mb-3 recuperar">
+                <!-- Button trigger modal -->
+                <a href="#" data-bs-toggle="modal" data-bs-target="#usuario">¿Olvidaste tu
+                  contraseña?</a>
+                <!-- Modal -->
+                <div class="modal fade" id="usuario" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Recuperar Contraseña
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Ingresa tu correo electrónico o numero telefonico para recibir un
+                          código de recuperación.</p>
+                        <div class="container">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Elija la opcion de recuperacion
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Correo Electronico</a>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Telefono</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <br>
+                        <form action="">
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Mandar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <p class="texto">¿NO TIENES CUENTA?</p>
+            <p class="texto">REGÍSTRATE Y HAZ TUS COMPRAS MÁS RÁPIDO</p>
+            <div class="py-5">
+              <!-- Button trigger modal -->
+              <button type="button" data-bs-toggle="modal" data-bs-target="#new_usuario" class="btn btn-dark">Crear
+                Cuenta</button>
+            </div>
+            <!--crear cuenta-->
+            <div class="mb-3 recuperar">
+              <!-- Modal -->
+              <div class="modal fade" id="new_usuario" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Registro
+                      </h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Crea tu cuenta Nueva </p>
+                      <div class="container">
+                      </div>
+                      <form action="">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" name="nombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" name="telefono" class="form-label">Telefono</label>
+                          <input type="text number" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" name="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" name="contraseña" class="form-label">Contraseña</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" name="Pregunta seguridad" class="form-label">preguta seguridad </label>
+                          <input type="text" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" name="respuesta Pregunta seguridad" class="form-label">respuesta preguta seguridad </label>
+                          <input type="text" class="form-control" id="exampleInputEmail1">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success">Guardar</button>
+                      <button type="button" class="btn btn-danger">Cencelar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer border-top py-4">
+    <p>Contactos</p>
+    <p>Correo electrónico de contacto:
+      <a href="leo: leonardo.vivar.es@usb.edu.mx">
+        leonardo.vivar.es@usb.edu.mx</a>
+      <br>
+      <a href="tel 5583978427">Telefono 5583978427</a>
+    </p>
+    <a href="politicas.html">
+      <p style="color:rgb(0, 0, 0)">Politicas y Terminos de Privacidad y de Condiciones</p>
+  </footer>
+</body>
+<script src="./js/SCRIPT.JS"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
